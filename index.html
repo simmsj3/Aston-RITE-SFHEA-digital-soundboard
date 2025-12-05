@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RITE Scheme Senior Fellowship Digital Mentor</title>
+    <style>
+      :root {
+        --aston-purple: #421C52;
+        --aston-magenta: #D0006F;
+        --aston-dark-purple: #2A0D36;
+        --bg-color: #F8F9FA;
+        --chat-bg: #FFFFFF;
+        --user-msg-bg: #421C52;
+        --ai-msg-bg: #F0F0F0;
+        --text-color: #333333;
+      }
+
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: var(--bg-color);
+        margin: 0;
+        padding: 0;
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
+
+      #root {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+        box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        background: white;
+      }
+
+      /* Scrollbar styling */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #aaa;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
